@@ -10,3 +10,107 @@ P(RCAi>1∣RCAj>1)=
 (No of countries that export both product i and product j with RCA>1)/(No of countries that export product j with RCA>1)  and 
 P(RCAj>1∣RCAi>1)=(No of countries that export both product i and product j with RCA>1)/(No of countries that export product i with RCA>1)
 The minimum of these conditional probabilities is taken as the proximity measure for a pair of products to avoid overestimating the relatedness between two products. For example, if there is a high likelihood for countries that export i to also export j, but there isn’t a high likelihood for countries that export j to also export i, taking the minimum ensures that the products won’t be strongly related. Thus, for there to be a strong proximity between i and j, both conditional probabilities must be high. Once these pair-wise proximities are obtained for all products, they can be used to construct the product space network where nodes would represent products and links would represent the proximities between them. 
+
+To compute the product space, the first step is to calculate the Revealed Comparative Advantage (RCA) for exports of all products from all countries for a selected year.
+
+Revealed Comparative Advantage (RCA)
+
+The RCA formula is given by:
+
+RCA
+i,j
+	​
+
+=
+(
+X
+w
+	​
+
+X
+i
+	​
+
+	​
+
+)
+(
+X
+wj
+	​
+
+X
+ij
+	​
+
+	​
+
+)
+	​
+
+
+Where:
+
+Xij = exports of product i from country j
+Xwj = total exports of country j
+Xi = total world exports of product i
+Xw = total world exports
+
+Export data is sourced from the World Integrated Trade Solution (WITS) database using 4-digit HS product classifications.
+
+The RCA values are then used to calculate proximity, which measures the likelihood that two products are exported together. This is based on the number of countries exporting both products with RCA > 1.
+
+Product Proximity
+
+The proximity between a pair of products is defined as:
+
+ϕ
+i,j
+	​
+
+=min(P(RCA
+i
+	​
+
+>1∣RCA
+j
+	​
+
+>1),P(RCA
+j
+	​
+
+>1∣RCA
+i
+	​
+
+>1))
+Conditional Probabilities
+Probability of exporting product i given export of product j
+P(RCA
+i
+	​
+
+>1∣RCA
+j
+	​
+
+>1)=
+Number of countries exporting j with RCA>1
+Number of countries exporting both i and j with RCA>1
+	​
+
+Probability of exporting product j given export of product i
+P(RCA
+j
+	​
+
+>1∣RCA
+i
+	​
+
+>1)=
+Number of countries exporting i with RCA>1
+Number of countries exporting both i and j with RCA>1
+	​
+
