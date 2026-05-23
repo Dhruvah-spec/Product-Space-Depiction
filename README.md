@@ -1,4 +1,4 @@
-# Product-Space-Description
+# Product-Space-Depiction
 The product space is a network that connects products that are believed to require similar kind of knowledge to create, based on the probability of the products being exported in tandem. The idea here is that countries would find it easier to diversify into making products that require similar skills/knowledge to the ones that they already make and so mapping the relatedness between products gives a clue about some possible development paths. It is one of the conceptual tools used in the field of economic complexity for the purpose of analyzing economic development. Studies in this field have noted that the product space contains a core-periphery structure, where the core consists of densely connected products like machinery and chemicals and the periphery contains product like agricultural goods and raw minerals. This study aims to verify these findings by reproducing the product space from scratch using export data. 
 
 # Methodology
