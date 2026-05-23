@@ -56,7 +56,10 @@ P(RCA_j > 1 \mid RCA_i > 1) =
 \text{Number of countries exporting } i \text{ with } RCA > 1
 }
 ```
-
+## Findings
+- Product Space was found to have a core-periphery form where the core was composed of a densely connected cluster of products from sectors like machinery and pharmaceuticals while the periphery consisted of sparsely connected products from sectors like agriculture and raw minerals.
+- The wealthier nations exported products from both the sparse and dense regions of the network while the poorer nations primarily exported from the sparse regions, having very little presence at the dense core.
+- The project reaffirms the finings from the economic complexity literature.
 	​
 
 
