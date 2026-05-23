@@ -56,6 +56,8 @@ P(RCA_j > 1 \mid RCA_i > 1) =
 \text{Number of countries exporting } i \text{ with } RCA > 1
 }
 ```
+The minimum of these conditional probabilities is taken as the proximity measure for a pair of products to avoid overestimating the relatedness between two products. For example, if there is a high likelihood for countries that export i to also export j, but there isn’t a high likelihood for countries that export j to also export i, taking the minimum ensures that the products won’t be strongly related. Thus, for there to be a strong proximity between i and j, both conditional probabilities have to be high. Once these pair-wise proximities are obtained for all products, they can be used to construct the product space network where nodes would represent products and links would represent the proximities between them. 
+
 ## Findings
 - Product Space was found to have a core-periphery form where the core was composed of a densely connected cluster of products from sectors like machinery and pharmaceuticals while the periphery consisted of sparsely connected products from sectors like agriculture and raw minerals.
 - The wealthier nations exported products from both the sparse and dense regions of the network while the poorer nations primarily exported from the sparse regions, having very little presence at the dense core.
