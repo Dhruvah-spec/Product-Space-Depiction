@@ -4,7 +4,7 @@ The product space is a network that connects products that are believed to requi
 ## Methodology
 To compute the product space, the first step is to calculate the **Revealed Comparative Advantage (RCA)** for exports of all products from all countries for a selected year.
 
-## Revealed Comparative Advantage (RCA)
+Revealed Comparative Advantage (RCA)
 
 The RCA formula is given by:
 
@@ -19,13 +19,13 @@ Where:
 - `Xi` = total world exports of product *i*
 - `Xw` = total world exports
 
-Export data is sourced from the **World Integrated Trade Solution (WITS)** database using **4-digit HS product classifications**.
+Export data is sourced from the **Altlas of Economic Complexity** database using **4-digit HS product classifications**.
 
 The RCA values are then used to calculate **proximity**, which measures the likelihood that two products are exported together. This is based on the number of countries exporting both products with `RCA > 1`.
 
 ---
 
-# Product Proximity
+Product Proximity
 
 The proximity between a pair of products is defined as:
 
@@ -33,9 +33,9 @@ The proximity between a pair of products is defined as:
 \phi_{i,j} = \min \left( P(RCA_i > 1 \mid RCA_j > 1),\; P(RCA_j > 1 \mid RCA_i > 1) \right)
 ```
 
-## Conditional Probabilities
+Conditional Probabilities
 
-### Probability of exporting product *i* given export of product *j*
+Probability of exporting product *i* given export of product *j*
 
 ```math
 P(RCA_i > 1 \mid RCA_j > 1) =
@@ -46,7 +46,7 @@ P(RCA_i > 1 \mid RCA_j > 1) =
 }
 ```
 
-### Probability of exporting product *j* given export of product *i*
+Probability of exporting product *j* given export of product *i*
 
 ```math
 P(RCA_j > 1 \mid RCA_i > 1) =
